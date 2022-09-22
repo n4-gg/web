@@ -3,23 +3,21 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <main class="p-4 container flex flex-col items-center justify-center min-h-screen mx-auto">
-    <div>
-      <img
-        src="/images/white-165.png"
-        alt="Logo"
-        height="165"
-        width="165"
-        class="bg-gradient-to-r from-n4-darkblue via-n4-aqua to-n4-darkblue animate-text"
-      />
+  <main class="p-4 container flex flex-col items-center justify-between min-h-screen mx-auto select-none">
+    <div class="text-xl">Coming Soon</div>
 
-      <!-- <h1
+    <div class="flex flex-col items-center">
+      <img src="/images/white-165.png" alt="Logo" height="165" width="165" />
+
+      <h1
         class="text-8xl font-semibold bg-gradient-to-r bg-clip-text text-transparent from-n4-darkblue via-n4-aqua to-n4-darkblue animate-text"
       >
         n4.gg
-      </h1> -->
-
-      <h1 class="text-8xl font-semibold text-white">n4.gg</h1>
+      </h1>
     </div>
+
+    <a class="text-xl" href="https://discord.gg/n4" target="_blank">
+      <img src="/discord.svg" alt="Discord" height="28" width="28" />
+    </a>
   </main>
 </Layout>
