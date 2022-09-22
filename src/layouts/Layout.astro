@@ -6,6 +6,8 @@ export interface Props {
 const { title } = Astro.props;
 
 const description = '';
+const imageMetaURL = "https://cats.n4.gg/logo.png";
+const name = "n4.gg Website";
 ---
 
 <!DOCTYPE html>
@@ -23,6 +25,8 @@ const description = '';
         <meta name="twitter:image" content={imageMetaURL} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="theme-color" content="#dbeafe" />
+				<meta name="apple-mobile-web-app-title" content={name} />
+        <meta name="application-name" content={name} />
 	</head>
 	<body>
 		<slot />
