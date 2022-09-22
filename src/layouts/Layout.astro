@@ -1,4 +1,6 @@
 ---
+import "./fonts.css";
+
 export interface Props {
   name?: string;
 }
@@ -6,7 +8,9 @@ export interface Props {
 const name = "n4.gg";
 const title = `${name} ${Astro.props.name ? `- ${Astro.props.name}` : ""}`;
 const description = "Home page for n4.gg Inc - Fullstack web development.";
+const image = "/logo.png";
 const author = "Vyast";
+const keywords = "fivem, development, web, n4, vyast";
 
 const getBaseUrl = () => {
   if (typeof window !== "undefined") return "";
@@ -26,26 +30,34 @@ const url = getBaseUrl();
     <meta name="generator" content={Astro.generator} />
 
     <title>{title}</title>
-    <meta property="og:title" content={title} />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={name} />
-    <meta name="og:image" property="og:image:alt" content="/logo.png" />
-    <meta name="url" property="og:url" content={url} />
-    <meta name="author" property="og:author" content={author} />
-    <meta name="image" property="image:alt" content="/logo.png" />
-    <meta name="description" property="og:description" content={description} />
+    <meta name="author" content={author} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
 
     <meta name="theme-color" content="#00feff" />
-    <meta name="apple-mobile-web-app-title" content={name} />
+    <meta name="apple-mobile-web-app-title" content={title} />
     <meta name="application-name" content={name} />
 
-    <meta name="twitter:creator" content="@vyasts" />
-    <meta name="twitter:image" content="/logo.png" />
+    <!-- <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144" />
+    <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114" />
+    <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72" />
+    <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon" />
+    <link href="ico/favicon.png" rel="shortcut icon" /> -->
+
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:site_name" content={title} />
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={name} />
+    <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    <meta name="twitter:creator" content="@vyasts" />
   </head>
-  <body>
+  <body class="bg-hero-pattern dark:bg-neutral-800 bg-neutral-200 font-['BLENDERPRO-BOLD']">
     <slot />
   </body>
 </html>

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "BLENDERPRO-BOLD";
+  src: url("/fonts/BLENDERPRO-BOLD.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BLENDERPRO-BOLDITALIC";
+  src: url("/fonts/BLENDERPRO-BOLDITALIC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BLENDERPRO-BOOK";
+  src: url("/fonts/BLENDERPRO-BOOK.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BLENDERPRO-BOOKITALIC";
+  src: url("/fonts/BLENDERPRO-BOOKITALIC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BLENDERPRO-HEAVY";
+  src: url("/fonts/BLENDERPRO-HEAVY.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BLENDERPRO-MEDIUM";
+  src: url("/fonts/BLENDERPRO-MEDIUM.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BLENDERPRO-MEDIUMITALIC";
+  src: url("/fonts/BLENDERPRO-MEDIUMITALIC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BLENDERPRO-THIN";
+  src: url("/fonts/BLENDERPRO-THIN.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BLENDERPRO-THINITALIC";
+  src: url("/fonts/BLENDERPRO-THINITALIC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
