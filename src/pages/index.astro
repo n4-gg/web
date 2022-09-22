@@ -1,32 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 ---
 
 <Layout>
-  <main class="container mx-auto flex flex-col items-center justify-center min-h-screen p-4">
-    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
-    <p class="instructions">
-      Check out the <code>src/pages</code> directory to get started.<br />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-    </p>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
-      />
-      <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card href="https://astro.build/chat/" title="Chat" body="Come say hi to our amazing Discord community. ❤️" />
-    </ul>
+  <main class="p-4 container flex flex-col items-center justify-center min-h-screen mx-auto">
+    <div>
+      <img src="/aqua-logo-165.png" alt="Logo" />
+
+      <h1
+        class="pt-2 text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-tr from-n4-darkblue via-n4-aqua to-n4-gray animate-gradient-text"
+      >
+        n4.gg
+      </h1>
+    </div>
   </main>
 </Layout>
