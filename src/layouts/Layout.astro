@@ -1,13 +1,17 @@
 ---
 export interface Props {
-  title: string;
+  name?: string;
 }
 
-const { title } = Astro.props;
-
-const description = "";
-const imageMetaURL = "https://cats.n4.gg/logo.png";
+const title = `n4.gg ${Astro.props.name ? `- ${Astro.props.name}` : ""}`;
+const description = "Fullstack development";
 const name = "n4.gg Website";
+
+const getBaseUrl = () => {
+  if (typeof window !== "undefined") return ""; // browser should use relative url
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`; // SSR should use vercel url
+  return `http://localhost:${process.env.PORT ?? 3000}`; // dev SSR should use localhost
+};
 ---
 
 <!DOCTYPE html>
@@ -17,16 +21,24 @@ const name = "n4.gg Website";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <title>n4.gg - {title}</title>
+
+    <title>{title}</title>
     <meta name="description" content={description} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={imageMetaURL} />
-    <meta name="twitter:image" content={imageMetaURL} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#dbeafe" />
+    <meta name="theme-color" content="#00feff" />
     <meta name="apple-mobile-web-app-title" content={name} />
     <meta name="application-name" content={name} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:url" content="https://n4.gg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={name} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/logo.png" />
+
+    <meta name="twitter:image" content="/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={name} />
+    <meta name="twitter:description" content={description} />
   </head>
   <body>
     <slot />
