@@ -3,13 +3,22 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <main class="p-4 container flex flex-col items-center justify-center min-h-screen mx-auto">
-    <img src="/aqua-logo-165.png" alt="Logo" height="165" width="165" />
+  <main class="p-4 container flex flex-col items-center justify-center min-h-screen mx-auto select-none gap-8">
+    <img src="/images/white-165.png" alt="Logo" height="165" width="165" />
 
     <h1
       class="text-8xl text-center font-semibold bg-gradient-to-r bg-clip-text text-transparent from-n4-darkblue via-n4-aqua to-n4-darkblue animate-text"
     >
-      404 Not Found
+      Page Not Found
     </h1>
+
+    <button class="flex gap-4 items-center rounded-lg px-4 shadow-lg border-2 hover:scale-105 duration-300">
+      <img src="/left-arrow.svg" alt="Arrow" class="h-4 w-4" />
+      <a
+        href="/"
+        class="text-2xl bg-gradient-to-r bg-clip-text text-transparent from-n4-darkblue via-n4-aqua to-n4-darkblue animate-text"
+        >Home</a
+      >
+    </button>
   </main>
 </Layout>
