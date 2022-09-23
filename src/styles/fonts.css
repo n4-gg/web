@@ -1,18 +1,19 @@
 @font-face {
-  font-family: "blenderpro";
+  font-family: "BlenderPro";
   src: url("/fonts/BLENDERPRO-BOOK.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "blenderpro";
+  font-family: "BlenderPro";
   src: url("/fonts/BLENDERPRO-BOLD.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "blenderpro";
+  font-family: "BlenderPro";
   src: url("/fonts/BLENDERPRO-HEAVY.ttf") format("truetype");
   font-weight: bolder;
 }
