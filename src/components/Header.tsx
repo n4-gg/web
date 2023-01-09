@@ -34,15 +34,27 @@ export function Header() {
       </div> */}
 
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
-            {HEADER_NAV.map((item, index) => (
-              <Link
-                key={index}
-                href={item.href}
-                className="font-semibold text-off-white duration-100 hover:text-white"
-              >
-                {item.name}
-              </Link>
-            ))}
+            {HEADER_NAV.map((item, index) =>
+              item.ext ? (
+                <a
+                  key={index}
+                  target="_blank"
+                  rel="noreferrer"
+                  href={item.href}
+                  className="font-semibold text-off-white duration-100 hover:text-white"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={index}
+                  href={item.href}
+                  className="font-semibold text-off-white duration-100 hover:text-white"
+                >
+                  {item.name}
+                </Link>
+              )
+            )}
           </div>
 
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">

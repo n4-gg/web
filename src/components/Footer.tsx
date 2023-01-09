@@ -4,17 +4,28 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer>
+    <footer className="mt-12">
       <div className="mx-auto max-w-7xl overflow-hidden py-12 px-6 lg:px-8">
         <nav className="flex flex-wrap justify-center" aria-label="Footer">
           {FOOTER_NAV.map((item, index) => (
             <div key={index} className="px-5 py-2">
-              <Link
-                href={item.href}
-                className="text-base text-off-white duration-150 hover:text-white"
-              >
-                {item.name}
-              </Link>
+              {item.ext ? (
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={item.href}
+                  className="text-base text-off-white duration-150 hover:text-white"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  href={item.href}
+                  className="text-base text-off-white duration-150 hover:text-white"
+                >
+                  {item.name}
+                </Link>
+              )}
             </div>
           ))}
         </nav>

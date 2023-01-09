@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <div className="relative px-6 lg:px-8">
+    <div id="hero" className="relative px-6 lg:px-8">
       <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
         <div>
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -38,7 +38,7 @@ export function Hero() {
                 href="https://store.n4.gg"
                 className="inline-block rounded-lg bg-n4-blue px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-n4-blue duration-200 hover:bg-n4-blue/80"
               >
-                Browse store{" "}
+                Visit store{" "}
                 <span className="pl-2 text-off-white" aria-hidden="true">
                   &rarr;
                 </span>
