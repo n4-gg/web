@@ -11,6 +11,7 @@ export function Footer() {
             <a
               key={index}
               target="_blank"
+              rel="noreferrer"
               href={item.href}
               className="text-off-white/80 duration-150 hover:text-off-white"
             >

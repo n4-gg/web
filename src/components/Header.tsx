@@ -1,5 +1,6 @@
 import { HEADER_NAV } from "@/data/header-nav";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   return (
@@ -12,7 +13,12 @@ export function Header() {
           <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">n4.gg</span>
-              <img className="h-8" src="/images/blue-logo.png" alt="Logo" />
+              <Image
+                width={28}
+                height={28}
+                src="/images/blue-logo.png"
+                alt="Logo"
+              />
             </Link>
           </div>
 

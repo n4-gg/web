@@ -34,6 +34,7 @@ export function Hero() {
             <div className="mt-8 flex gap-x-4 sm:justify-center">
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://store.n4.gg"
                 className="inline-block rounded-lg bg-n4-blue px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-n4-blue duration-200 hover:bg-n4-blue/80"
               >
