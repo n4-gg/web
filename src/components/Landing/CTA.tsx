@@ -1,6 +1,6 @@
 export function CTA() {
   return (
-    <div id="cta" className="mb-12 bg-off-white/10 shadow-lg">
+    <div id="cta" className="mb-24 bg-off-white/10 shadow-lg">
       <div className="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white/95 sm:text-4xl">
           <span className="block">Upgrade your server.</span>
