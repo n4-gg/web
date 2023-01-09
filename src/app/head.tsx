@@ -9,7 +9,7 @@ const description =
   "n4.gg provides premium quality FiveM scripts sold through our Tebex store";
 
 const keywords =
-  "fivem, development, n4, vyast, vyast.dev, script, scripts, rp, tebex, cfx, cfx.re, roleplay, premium, resource, lua";
+  "fivem, development, n4, vyast, vyast.dev, script, scripts, rp, tebex, cfx, cfx.re, roleplay, queue, quality, premium, resource, lua";
 
 export default function Head() {
   return (
