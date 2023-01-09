@@ -21,7 +21,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="px-6 pt-6 lg:px-8">
+    <header className="sticky top-0 z-10 px-6 py-4 backdrop-blur-md lg:px-8">
       <div className="container mx-auto">
         <nav
           className="flex h-9 items-center justify-between"
@@ -67,7 +67,7 @@ export function Header() {
         </nav>
 
         <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-glitch-pattern px-6 py-6 lg:hidden">
+          <Dialog.Panel className="fixed inset-0 z-20 overflow-y-auto bg-glitch-pattern px-6 py-6 lg:hidden">
             <div className="flex h-9 items-center justify-between">
               <div className="flex">
                 <Logo />
