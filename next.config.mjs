@@ -12,11 +12,6 @@ const config = {
   experimental: {
     appDir: true,
   },
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
-  },
-  trailingSlash: true,
 };
 
 export default config;
