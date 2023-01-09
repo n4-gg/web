@@ -3,7 +3,7 @@ import CheckIcon from "@heroicons/react/24/outline/CheckIcon";
 
 export function Features() {
   return (
-    <div id="features">
+    <div id="features" className="mb-12">
       <div className="mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
