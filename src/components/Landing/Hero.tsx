@@ -44,7 +44,7 @@ export function Hero() {
                 </span>
               </a>
 
-              <Link
+              <a
                 href="/#faq"
                 className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 ring-1 ring-off-white/30 hover:ring-white/30"
               >
@@ -52,7 +52,7 @@ export function Hero() {
                 <span className="pl-2 text-off-white/50" aria-hidden="true">
                   &rarr;
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

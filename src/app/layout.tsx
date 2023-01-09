@@ -18,7 +18,7 @@ export default function RootLayout({
       lang="en"
       className={clsx(inter.className, "dark scroll-smooth antialiased")}
     >
-      <body className="bg-opacity-10 bg-glitch-pattern text-off-white">
+      <body className="bg-glitch-pattern text-off-white">
         <Header />
         {children}
         <Footer />

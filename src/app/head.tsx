@@ -1,5 +1,7 @@
 const BASE_URL = "https://n4.gg";
 
+console.log(process.env.VERCEL_URL, "BASE_URL", BASE_URL);
+
 const title = "n4.gg | FiveM Scripts";
 const image = `${BASE_URL}/images/banner.jpg`;
 
@@ -35,7 +37,7 @@ export default function Head() {
       <link rel="manifest" href="/site.webmanifest" />
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#014188" />
       <meta name="msapplication-TileColor" content="#014188" />
-      <meta name="theme-color" content="#ffffff" />
+      <meta name="theme-color" content="#014188" />
 
       <meta name="author" content="Vyast" />
       <meta name="description" content={description} />
