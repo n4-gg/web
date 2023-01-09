@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "glitch-pattern": "url('/images/bg.jpg')",
+        "glitch-pattern": "url('/images/bg.webp')",
       },
       colors: {
         "off-white": "#DBDBDB",
