@@ -1,7 +1,5 @@
 const BASE_URL = "https://n4.gg";
 
-//console.log(process.env.VERCEL_URL, "BASE_URL", BASE_URL);
-
 const title = "n4.gg | FiveM Scripts";
 const image = `${BASE_URL}/images/banner.jpg`;
 
