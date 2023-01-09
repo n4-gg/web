@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Inter } from "@next/font/google";
 import clsx from "clsx";
+import { AnalyticsWrapper } from "@/components/Analytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,6 +23,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+
+        <AnalyticsWrapper />
       </body>
     </html>
   );
