@@ -48,7 +48,7 @@ export default function Page() {
 
           <Image
             className="w-full rounded-lg"
-            src="/images/banner.jpg"
+            src="/images/small-banner.webp"
             alt="n4.gg Banner"
             width={1310}
             height={873}
