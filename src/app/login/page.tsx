@@ -1,7 +1,10 @@
 export default function Page() {
   return (
-    <main className="flex items-center justify-center">
-      <h1 className="my-72 text-4xl font-semibold">Coming Soon</h1>
+    <main className="flex flex-grow items-center justify-center">
+      <div className="flex flex-col items-center gap-4">
+        <h1 className="text-6xl font-semibold">Dashboard</h1>
+        <h2 className="text-3xl font-semibold">Coming Soon</h2>
+      </div>
     </main>
   );
 }

@@ -2,9 +2,11 @@
 
 import Bars3Icon from "@heroicons/react/24/outline/Bars3Icon";
 import XMarkIcon from "@heroicons/react/24/outline/XMarkIcon";
+
 import { HEADER_NAV } from "@/data/header-nav";
 import { Dialog } from "@headlessui/react";
 import { useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 

@@ -1,11 +1,11 @@
-import { FOOTER_NAV } from "@/data/footer-nav";
 import { FOOTER_SOCIALS } from "@/data/footer-socials";
+import { FOOTER_NAV } from "@/data/footer-nav";
 import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="mt-12">
-      <div className="mx-auto max-w-7xl overflow-hidden py-12 px-6 lg:px-8">
+    <footer>
+      <div className="mx-auto max-w-7xl py-12 px-6 lg:px-8">
         <nav className="flex flex-wrap justify-center" aria-label="Footer">
           {FOOTER_NAV.map((item, index) => (
             <div key={index} className="px-5 py-2">
