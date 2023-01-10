@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Page() {
   return (
     <main className="relative overflow-hidden py-16">
@@ -12,10 +14,9 @@ export default function Page() {
             </span>
           </h1>
           <p className="mt-8 text-xl leading-8">
-            We are happy to announce that "vyast.dev" is now "n4.gg". This
-            rebrand comes after 2+ years of FiveM scripting under our old name,
-            and its finally time for a fresh start. Details about our new
-            domain, a new discord, and more can be found below.
+            {
+              'We are happy to announce that "vyast.dev" is now "n4.gg". This rebrand comes after 2+ years of FiveM scripting under our old name, and its finally time for a fresh start. Details about our new domain, a new discord, and more can be found below.'
+            }
           </p>
         </div>
 
@@ -26,6 +27,7 @@ export default function Page() {
             shared before such as our script documentation (
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://docs.n4.gg"
               className="text-off-white"
             >
@@ -34,6 +36,7 @@ export default function Page() {
             ), status page (
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://status.n4.gg"
               className="text-off-white"
             >
@@ -43,7 +46,7 @@ export default function Page() {
             same subdomain, it is only the root domain that has changed.
           </p>
 
-          <img
+          <Image
             className="w-full rounded-lg"
             src="/images/banner.jpg"
             alt="n4.gg Banner"
@@ -63,6 +66,7 @@ export default function Page() {
             more info, you can the new VenomAC website{" "}
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://venomac.com"
               className="text-off-white"
             >
@@ -76,6 +80,7 @@ export default function Page() {
             full link below:{" "}
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://discord.gg/n4"
               className="text-n4-cyan"
             >
