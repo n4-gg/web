@@ -45,7 +45,7 @@ export function Hero() {
               </a>
 
               <a
-                href="/#faq"
+                href="/#features"
                 className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 ring-1 ring-off-white/30 hover:ring-white/30"
               >
                 Learn more{" "}

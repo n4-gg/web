@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <div className="relative overflow-hidden py-16">
+    <main className="relative overflow-hidden py-16">
       <div className="relative px-6 lg:px-8">
         <div className="mx-auto max-w-prose text-lg">
           <h1>
@@ -84,6 +84,6 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
