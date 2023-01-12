@@ -60,10 +60,10 @@ export function Header() {
 
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
             <a
-              href="/login"
+              href="https://dashboard.n4.gg"
               className="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 shadow-sm ring-1 ring-off-white/30 hover:ring-white/30"
             >
-              Log in
+              Dashboard
             </a>
           </div>
         </nav>
@@ -104,12 +104,12 @@ export function Header() {
                 </div>
 
                 <div className="py-6">
-                  <Link
-                    href="/login"
+                  <a
+                    href="https://dashboard.n4.gg"
                     className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6"
                   >
-                    Log in
-                  </Link>
+                    Dashboard
+                  </a>
                 </div>
               </div>
             </div>
