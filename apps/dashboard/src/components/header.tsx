@@ -6,6 +6,7 @@ import {
   Header as MantineHeader,
 } from "@mantine/core";
 import { type Dispatch, type SetStateAction } from "react";
+import Image from "next/image";
 
 export function Header(props: {
   setOpened: Dispatch<SetStateAction<boolean>>;
@@ -16,6 +17,16 @@ export function Header(props: {
   return (
     <MantineHeader height={60} p="md">
       <div style={{ display: "flex", alignItems: "center", height: "100%" }}>
+        <Image
+          width={32}
+          height={32}
+          src="/images/white-200.png"
+          alt="White Logo"
+        />
+        <Text fz="xl" fw={500}>
+          Dashboard
+        </Text>
+
         <MediaQuery largerThan="sm" styles={{ display: "none" }}>
           <Burger
             onClick={() => props.setOpened((o) => !o)}
@@ -25,8 +36,6 @@ export function Header(props: {
             mr="xl"
           />
         </MediaQuery>
-
-        <Text>Application header</Text>
       </div>
     </MantineHeader>
   );
