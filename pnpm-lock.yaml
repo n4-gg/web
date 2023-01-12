@@ -12,6 +12,8 @@ importers:
 
   apps/dashboard:
     specifiers:
+      '@n4/db': workspace:*
+      '@n4/tsconfig': workspace:*
       '@tanstack/react-query': ^4.20.0
       '@trpc/client': ^10.8.1
       '@trpc/next': ^10.8.1
@@ -32,6 +34,7 @@ importers:
       typescript: ^4.9.4
       zod: ^3.20.2
     dependencies:
+      '@n4/db': link:../../packages/db
       '@tanstack/react-query': 4.22.0_biqbaboplfbrettd7655fr4n2y
       '@trpc/client': 10.9.0_@trpc+server@10.9.0
       '@trpc/next': 10.9.0_x4tyufyemzhcd3jbb4hcrq3eou
@@ -44,6 +47,7 @@ importers:
       superjson: 1.9.1
       zod: 3.20.2
     devDependencies:
+      '@n4/tsconfig': link:../../packages/tsconfig
       '@types/node': 18.11.18
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.10
