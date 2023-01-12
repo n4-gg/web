@@ -1,10 +1,11 @@
 import styles from "./index.module.css";
-import { type NextPage } from "next";
+import { type GetServerSideProps, type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
 
 import { api } from "../utils/api";
+import { prisma } from "@/server/db/client";
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -64,7 +65,7 @@ const AuthShowcase: React.FC = () => {
 
   const { data: secretMessage } = api.example.getSecretMessage.useQuery(
     undefined, // no input
-    { enabled: sessionData?.user !== undefined },
+    { enabled: sessionData?.user !== undefined }
   );
 
   return (
@@ -81,4 +82,16 @@ const AuthShowcase: React.FC = () => {
       </button>
     </div>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const count = await prisma.user.count();
+
+  console.log(count, "count");
+
+  return {
+    props: {
+      hi: true,
+    },
+  };
 };
