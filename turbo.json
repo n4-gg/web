@@ -14,7 +14,8 @@
     },
     "db:generate": {
       "inputs": ["prisma/schema.prisma"],
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**"],
+      "cache": false
     },
     "db:push": {
       "cache": false
