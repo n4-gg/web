@@ -2,13 +2,30 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "^db:generate"],
       "outputs": ["dist/**", ".next/**"]
     },
     "lint": {
       "outputs": []
     },
     "dev": {
+      "dependsOn": ["^db:generate"],
+      "cache": false
+    },
+    "db:generate": {
+      "inputs": ["prisma/schema.prisma"],
+      "outputs": ["dist/**"]
+    },
+    "db:push": {
+      "cache": false
+    },
+    "db:push:loss": {
+      "cache": false
+    },
+    "db:push:force": {
+      "cache": false
+    },
+    "db:studio": {
       "cache": false
     }
   }

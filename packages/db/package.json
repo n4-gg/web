@@ -1,0 +1,24 @@
+{
+  "name": "@n4/db",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "db:generate": "prisma generate && tsup",
+    "db:push": "prisma db push --skip-generate",
+    "db:push:loss": "prisma db push --skip-generate --accept-data-loss",
+    "db:push:force": "prisma db push --skip-generate --force-reset",
+    "db:studio": "prisma studio --port=5557 --browser=none"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@n4/tsconfig": "workspace:*",
+    "@types/node": "18.11.18",
+    "prisma": "^4.8.1",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4"
+  }
+}
