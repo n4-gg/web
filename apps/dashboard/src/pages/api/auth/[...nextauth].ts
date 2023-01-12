@@ -1,9 +1,11 @@
 import NextAuth, { type NextAuthOptions } from "next-auth";
 import DiscordProvider from "next-auth/providers/discord";
 
-import { env } from "../../../env/server.mjs";
+// import { env } from "../../../env/server.mjs";
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
 
 export const authOptions: NextAuthOptions = {
+  adapter: PrismaAdapter(prisma),
   // Include user.id on session
   callbacks: {
     session({ session, user }) {
