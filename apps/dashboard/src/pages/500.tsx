@@ -1,4 +1,4 @@
-import { Illustration500 } from "@/components/Illustration500";
+import { Illustration } from "@/components/500-drawing";
 import {
   createStyles,
   Container,
@@ -76,7 +76,7 @@ const Custom500: NextPage = () => {
     <div className={classes.root}>
       <Container>
         <div className={classes.inner}>
-          <Illustration500 className={classes.image} />
+          <Illustration className={classes.image} />
 
           <div className={classes.content}>
             <Title className={classes.title}>All of our servers are busy</Title>

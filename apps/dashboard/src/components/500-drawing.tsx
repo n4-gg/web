@@ -1,6 +1,6 @@
 import { useMantineTheme } from "@mantine/core";
 
-export function Illustration500(props: React.ComponentPropsWithoutRef<"svg">) {
+export function Illustration(props: React.ComponentPropsWithoutRef<"svg">) {
   const { colors, primaryColor, colorScheme } = useMantineTheme();
 
   const color = colors[primaryColor]!;

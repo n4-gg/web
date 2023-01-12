@@ -1,4 +1,4 @@
-import { Illustration404 } from "@/components/Illustration404";
+import { Illustration } from "@/components/404-drawing";
 import {
   createStyles,
   Container,
@@ -67,7 +67,7 @@ const Custom404: NextPage = () => {
     <Center sx={{ minHeight: "100vh" }}>
       <Container className={classes.root}>
         <div className={classes.inner}>
-          <Illustration404 className={classes.image} />
+          <Illustration className={classes.image} />
 
           <div className={classes.content}>
             <Title className={classes.title}>Nothing to see here</Title>
