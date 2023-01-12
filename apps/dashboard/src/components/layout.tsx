@@ -9,7 +9,7 @@ import {
 import { Header } from "./header";
 import { Head } from "./head";
 import { useSession } from "next-auth/react";
-import { Navbar } from "./navbar";
+import { CustomNavbar } from "./navbar";
 
 export function Layout(props: { children: ReactNode }) {
   const { status } = useSession({ required: true });
@@ -34,7 +34,7 @@ export function Layout(props: { children: ReactNode }) {
             },
           }}
           navbarOffsetBreakpoint="sm"
-          navbar={<Navbar opened={opened} />}
+          navbar={<CustomNavbar opened={opened} />}
           header={<Header opened={opened} setOpened={setOpened} />}
         >
           <Container>{props.children}</Container>
